@@ -26,14 +26,14 @@ public class Book extends Product {
     public void setGenre(String genre) {
         this.genre = genre;
     }
-    public void displayBookInfo() {
-        System.out.println("Book Information :");
-        System.out.println("Title : " + getTitle());
-        System.out.println("Author : " + getAuthor());
-        System.out.println("Pushlisher " + getPublisher());
-        System.out.println("Price : " + getPrice());
-        System.out.println("Quantity : " + getQuantity() );
-        System.out.println("Year Published" + yearPublished);
-        System.out.println("Genre : " + genre);
+
+    @Override
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "yearPublished=" + yearPublished +
+                ", genre='" + genre + '\'' +
+                '}' + super.toString();
     }
 }
