@@ -1,3 +1,8 @@
+package controller;
+
+import model.Product;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +18,8 @@ public abstract class AbstractManager <T extends Product> {
     public void editItem(String itemId, T updatedItem) {
         for (int i = 0; i < itemList.size(); i++) {
             T currentItem = itemList.get(i);
-            if (currentItem.getProductID().equals(itemId)) {
+            if (currentItem.getProductID()
+                    .equals(itemId)) {
                 itemList.set(i, updatedItem);
                 break;
             }
@@ -33,9 +39,5 @@ public abstract class AbstractManager <T extends Product> {
             }
         }
     }
-
-    public abstract void exportToExcel();
-
-    public abstract void importFromExcel();
-
+    public abstract void writeFile() throws IOException;
 }

@@ -1,3 +1,5 @@
+package model;
+
 public class Book extends Product {
     private int yearPublished;
     private String genre;
@@ -30,8 +32,14 @@ public class Book extends Product {
     @Override
     public String toString() {
         return "Book{" +
-                "yearPublished=" + yearPublished +
+                "productID='" + getProductID() + '\'' +
+                ", title='" + getTitle() + '\'' +
+                ", author='" + getAuthor() + '\'' +
+                ", publisher='" + getPublisher() + '\'' +
+                ", price=" + getPrice() +
+                ", quantity=" + getQuantity() +
+                ", yearPublished=" + yearPublished +
                 ", genre='" + genre + '\'' +
-                '}' + super.toString();
+                '}';
     }
 }

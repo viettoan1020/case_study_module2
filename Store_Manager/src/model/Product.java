@@ -1,3 +1,5 @@
+package model;
+
 public abstract class Product {
     private String productID;
     private String title;
@@ -68,7 +70,7 @@ public abstract class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "model.Product{" +
                 "productID='" + productID + '\'' +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +

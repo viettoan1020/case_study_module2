@@ -1,0 +1,3 @@
+model.Book{yearPublished=2, genre='2'}model.Product{productID='A00', title='1', author='2', publisher='3', price=22.0, quantity=1}
+model.Book{yearPublished=2, genre='2'}model.Product{productID='A02', title='1', author='2', publisher='3', price=22.0, quantity=1}
+model.Book{yearPublished=2, genre='2'}model.Product{productID='A03', title='1', author='2', publisher='3', price=22.0, quantity=1}
