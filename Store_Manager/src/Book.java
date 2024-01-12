@@ -28,8 +28,6 @@ public class Book extends Product {
     }
 
     @Override
-
-    @Override
     public String toString() {
         return "Book{" +
                 "yearPublished=" + yearPublished +
